@@ -1,0 +1,3 @@
+﻿  prove.cpp
+C:\Users\Doom\OneDrive\Рабочий стол\pov\prove\prove\prove.cpp(15,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  prove.vcxproj -> C:\Users\Doom\OneDrive\Рабочий стол\pov\prove\prove\x64\Debug\prove.exe

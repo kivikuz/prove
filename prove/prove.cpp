@@ -1,4 +1,5 @@
-﻿#include <stdio.h>
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <locale.h>
@@ -84,5 +85,5 @@ void ResultWrite(int a[], int size1) {
     for (int i = 0; i < size1; i++) {
         fprintf(file, "%d ", a[i]);
     }
-    
+    fclose(file);
 }
