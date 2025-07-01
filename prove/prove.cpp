@@ -84,5 +84,5 @@ void ResultWrite(int a[], int size1) {
     for (int i = 0; i < size1; i++) {
         fprintf(file, "%d ", a[i]);
     }
-    fclose(file);
+    
 }
