@@ -23,8 +23,8 @@ int main() {
     clock_t start = clock();
     selectionSort(a, size);
     clock_t stop = clock();
-
-    ResultWrite(a, size);
+    double time_taken = ((double)(stop - start)) / CLOCKS_PER_SEC;
+    ResultWrite(a, size, time_taken);
 
     printf("Время выполнения алгоритма: %.3f секунд\n", ((double)(stop - start)) / CLOCKS_PER_SEC);
     free(a);
@@ -79,8 +79,9 @@ void Generator(int a[], int size1) {
     fclose(file);
 }
 
-void ResultWrite(int a[], int size1) {
+void ResultWrite(int a[], int size1, double time_taken) {
     FILE* file = fopen("sorted.txt", "w");
+    fprintf(file, "Время сортировки: %.3f секунд\n", time_taken);
     printf("\nОтсортированный по возрастанию массив в файле sorted.txt\n");
     for (int i = 0; i < size1; i++) {
         fprintf(file, "%d ", a[i]);

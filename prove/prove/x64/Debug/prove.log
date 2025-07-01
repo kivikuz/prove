@@ -1,3 +1,8 @@
 ﻿  prove.cpp
 C:\Users\Doom\OneDrive\Рабочий стол\pov\prove\prove\prove.cpp(15,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  prove.vcxproj -> C:\Users\Doom\OneDrive\Рабочий стол\pov\prove\prove\x64\Debug\prove.exe
+C:\Users\Doom\OneDrive\Рабочий стол\pov\prove\prove\prove.cpp(27,5): error C2660: ResultWrite: функция не принимает 3 аргументов
+      C:\Users\Doom\OneDrive\Рабочий стол\pov\prove\prove\prove.cpp(11,6):
+       см. объявление "ResultWrite"
+      C:\Users\Doom\OneDrive\Рабочий стол\pov\prove\prove\prove.cpp(27,5):
+      при попытке сопоставить список аргументов "(int *, int, double)"
+  
